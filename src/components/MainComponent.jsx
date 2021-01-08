@@ -4,6 +4,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import HomePage from "./HomePage";
 import UserPage from "./UserPage";
+import DevicePage from "./DevicePage";
+
 function MainComponent(props) {
     return (
         <div>
@@ -11,6 +13,9 @@ function MainComponent(props) {
                 <Switch location={props.location}>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/user' component={UserPage} />
+                    <Route exact path='/devices' component={DevicePage} />
+                    {/* <Route exact path='/devices' component={DevicePage} /> */}
+
                     <Redirect to="/home" />
                 </Switch>
             {/* <Footer /> */}

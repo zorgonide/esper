@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import HomePage from "./HomePage";
 import UserPage from "./UserPage";
 import DevicePage from "./DevicePage";
+import NotFound from "./NotFound";
 
 function MainComponent(props) {
     return (
@@ -15,8 +16,7 @@ function MainComponent(props) {
                     <Route exact path='/user' component={UserPage} />
                     <Route exact path='/devices' component={DevicePage} />
                     {/* <Route exact path='/devices' component={DevicePage} /> */}
-
-                    <Redirect to="/home" />
+                    <Route path="*" component={NotFound} />
                 </Switch>
             {/* <Footer /> */}
         </div>

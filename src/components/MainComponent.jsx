@@ -7,15 +7,15 @@ import UserPage from "./UserPage";
 function MainComponent(props) {
     return (
         <div>
-          <Header />
+            <Header />
                 <Switch location={props.location}>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/user' component={UserPage} />
                     <Redirect to="/home" />
                 </Switch>
-          <Footer />
+            {/* <Footer /> */}
         </div>
-      );
+    );
 }
 
 export default MainComponent

@@ -18,7 +18,7 @@ function Homepage() {
                             <img class="card-img-top" src={HomePic} alt="Error"/>
                         </HideUntilLoaded>
                         <div class="card-body">
-                            <h5 class="card-title">Welcome</h5>
+                            <h5 class="card-title display-3">Welcome</h5>
                             <p class="card-text">to Esper console experience</p>
                         </div>
                     </div>

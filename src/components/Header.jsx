@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory, Link } from 'react-router-dom';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 
 function Header() {
     const [isNavOpen, toggleNav] = useState(false);
     const [isModalOpen, toggleModal] = useState(false)
-
+    const history = useHistory();
     return (
         <div>
             <Navbar dark expand="md">
                 <div className="container">
                     <NavbarToggler onClick={()=>toggleNav(!isNavOpen)} />
-                    <NavbarBrand href="/">Esper</NavbarBrand>
+                    <Link className="navbar-brand" onClick={() => history.push("/")}>Esper</Link>
                     <Collapse isOpen={isNavOpen} navbar>
                         <Nav navbar>
                         <NavItem>
-                            <NavLink className="nav-link"  to='/user'>User</NavLink>
+                            <NavLink className="nav-link"  to='/user'>Profile</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to='/devices'>Devices</NavLink>

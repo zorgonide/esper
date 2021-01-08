@@ -1,11 +1,3 @@
-.footer{
-  background-color: #D1C4E9;
-  padding: 20px 0px 20px 0px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* margin-top: 30vh; */
-}
 .navbar-dark {
   background-color: #512DA8;
   margin-bottom: 3vh;
@@ -20,4 +12,12 @@
 
 .border {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pink {
+  color:#a573ff
+}
+
+.list-group-item {
+  cursor: pointer;
 }

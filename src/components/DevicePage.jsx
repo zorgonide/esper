@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { fpost,fget } from "./apiCalls";
 import Loader from 'react-loader-spinner';
-import { HideUntilLoaded } from 'react-animation';
 import Devices from "../images/Devices.svg"
 import Manage from "../images/Manage.svg"
 import Pagination from "./Pagination"
@@ -9,7 +8,6 @@ import Error from "./Error"
 function DevicePage() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [item, setItem] = useState([]);
     const [totalItems, setTotalItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedItem, setSelectedItem] = useState(null)
@@ -20,7 +18,6 @@ function DevicePage() {
         .then((res) => res.data)
         .then(
             (result) => {
-                setItem(result);
                 setTotalItems(result);
                 setIsLoaded(true);
         },

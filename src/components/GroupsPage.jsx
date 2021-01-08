@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { fpost,fget } from "./apiCalls";
 import Loader from 'react-loader-spinner';
-import Devices from "../images/Devices.svg"
-import Manage from "../images/Manage.svg"
+import Groups from "../images/Groups.svg"
+import Manage from "../images/ManageGroup.svg"
 import Pagination from "./Pagination"
 import Error from "./Error"
 function GroupsPage() {
@@ -64,7 +64,7 @@ function GroupsPage() {
                     <div className="col">
                         <div className="card-deck">
                             <div className="card">
-                                <img src={Devices} className="card-img-top" alt="..." style={{maxHeight: "28vh"}}/>
+                                <img src={Groups} className="card-img-top" alt="..." style={{maxHeight: "28vh"}}/>
                                 <div className="card-body">
                                     <h3 className="card-title pink text-center">All groups</h3>
                                     <hr/>
@@ -98,7 +98,7 @@ function GroupsPage() {
                             <div className="card">
                                 <img src={Manage} className="card-img-top" alt="..." style={{maxHeight: "28vh"}}/>
                                 <div className="card-body">
-                                    <h3 className="card-title pink text-center">Manage Group</h3>
+                                    <h3 className="card-title pink text-center">Manage group</h3>
                                     <hr/>
                                     {
                                         selectedItem === null ? 

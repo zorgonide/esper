@@ -98,7 +98,7 @@ function DevicePage() {
                             <div className="card">
                                 <img src={Manage} className="card-img-top" alt="..." style={{maxHeight: "28vh"}}/>
                                 <div className="card-body">
-                                    <h3 className="card-title pink text-center">Manage Device</h3>
+                                    <h3 className="card-title pink text-center">Manage device</h3>
                                     <hr/>
                                     {
                                         selectedItem === null ? 

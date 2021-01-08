@@ -53,8 +53,8 @@ function GroupsPage() {
         let nextPage = totalItems.next;
         let previousPage = totalItems.previous;
         let paginate = (pageNumber) => {
-            setCurrentPage(pageNumber + 20);
-            fetchGroups(pageNumber + 20);
+            setCurrentPage(pageNumber);
+            fetchGroups(pageNumber);
         };
         return (
             <div className="container">
@@ -86,13 +86,13 @@ function GroupsPage() {
                                 </div>
 
                                 <div class="card-footer">
-                                    <Pagination
+                                    {/* <Pagination
                                         paginate={paginate}
                                         totalPages={totalPages}
                                         nextPage={nextPage}
                                         previousPage={previousPage}
                                         currentPage={currentPage}
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                             <div className="card">

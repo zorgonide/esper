@@ -10,7 +10,7 @@ const Pagination = ({ paginate, totalPages, nextPage, previousPage, currentPage 
         <nav className="footer">
             <ul className='pagination justify-content-center'>
                 <li className='page-item '>
-                    <button onClick={() => paginate(currentPage -1)} className='page-link' disabled={previousPage === null}>
+                    <button onClick={() => paginate(currentPage - 20)} className='page-link' disabled={previousPage === null}>
                     <span aria-hidden="true">&laquo;</span>
                     </button>
                 </li>
@@ -22,7 +22,7 @@ const Pagination = ({ paginate, totalPages, nextPage, previousPage, currentPage 
                 </li>
                 ))}
                 <li className='page-item '>
-                    <button onClick={() => paginate(currentPage + 1)} className='page-link' disabled={nextPage === null}>
+                    <button onClick={() => paginate(currentPage + 20)} className='page-link' disabled={nextPage === null}>
                     <span aria-hidden="true">&raquo;</span>
                     </button>
                 </li>

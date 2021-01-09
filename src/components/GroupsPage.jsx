@@ -77,7 +77,7 @@ function GroupsPage() {
                                                             {
                                                                 setSelectedItem(group);
                                                             }
-                                                    } className="list-group-item ">{group.name}</li>
+                                                    } className="list-group-item darkpink">{group.name}</li>
                                                 )                                
                                             }) :
                                             <li className="list-group-item">No groups found</li>

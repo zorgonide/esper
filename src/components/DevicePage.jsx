@@ -77,7 +77,7 @@ function DevicePage() {
                                                             {
                                                                 setSelectedItem(device);
                                                             }
-                                                    } className="list-group-item ">{device.device_name}</li>
+                                                    } className="list-group-item darkpink">{device.device_name}</li>
                                                 )                                
                                             }) :
                                             <li className="list-group-item">None</li>

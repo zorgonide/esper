@@ -85,15 +85,15 @@ function GroupsPage() {
                                     </div>
                                 </div>
 
-                                <div class="card-footer">
-                                    {/* <Pagination
+                                {/* <div class="card-footer">
+                                    <Pagination
                                         paginate={paginate}
                                         totalPages={totalPages}
                                         nextPage={nextPage}
                                         previousPage={previousPage}
                                         currentPage={currentPage}
-                                    /> */}
-                                </div>
+                                    />
+                                </div> */}
                             </div>
                             <div className="card">
                                 <img src={Manage} className="card-img-top" alt="..." style={{maxHeight: "28vh"}}/>
